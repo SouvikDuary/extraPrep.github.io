@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./other pages/homecss.css">
+    <link rel="stylesheet" href="./other pages/all.css">
+    <link rel="stylesheet" href="./other pages/all.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <div class="logo">
+                <img src="./images/studying.png" alt="" class="logo-img"><p>ExtraPrep</p>
+            </div>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">TOP SCORES</a></li>
+                <li><a href="">HISTORY</a></li>
+                <li><a href="">STATISICS</a></li>
+                <li><img src="./images/moon.png" style="width: 30px; height: 30px; cursor: pointer;" alt="" id="icon"></li>
+            </ul>
+        </nav>
+        <div class="info">
+            <h1>Welcome To <span>ExtraPrep</span></h1>
+            <p> Education is the catalyst that will hone and sharpen our talents, skills, and abilities <br> and cause them to blossom.</p>
+            <button onclick="test_window()">Take The Test</button>
+        </div>
+        <div class="img-box">
+            <img src="./images/pattern.png" alt=""  class="back-img">
+            <img src="./images/toppng.com-female-student-png-image-student-images-562x997.png" alt="" class="main-img">
+        </div>
+        <div class="social-link">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+    <script>
+        function test_window()
+        {
+                window.location.replace('./other pages/index.html','parent');
+        }
+        
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme")
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "./images/sun.png"
+            } 
+            else {
+                icon.src = "./images/moon.png"
+            }
+        }
+    </script>
+</body>
+
+</html>

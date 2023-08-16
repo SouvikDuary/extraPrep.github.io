@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: #212121;
+    --second-color: #edf2fc;
+}
+.dark-theme{
+    --main-color: #edf2fc;
+    --second-color: #212121;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: var(--second-color);
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    cursor: pointer;
+}
+nav .logo img {
+    width: 60px;
+    height: 60px;
+}
+.logo p {
+    padding-top: 20px ;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ff4321;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+}
+nav ul li a:hover{
+    color: #ff4321;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+
+}
+.info h1{
+    font-size: 60px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+span {
+    color: #ff4321;
+}
+.info p {
+    color: #606163;
+    line-height: 22px;
+}
+.info button{
+    background: var(--main-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--second-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+.info button:hover {
+    color: var(--main-color);
+    background: #ff4321;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 56%;
+}
+.social-link{
+    margin-left: 8% ;
+    margin-top: 65px;
+}
+.social-link a{
+    font-size: 30px;
+    color: #606163;
+    margin-right: 20px;
+}
+.social-link a:hover {
+    color: #ff4321;
+}
